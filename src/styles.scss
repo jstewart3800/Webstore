@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+body{
+    background-image: url(assets/WebstoreBackgroundMKII.png);
+    background-size: cover;
+}
+
+.roundCorners{
+    border-radius: 25px;
+}
+
+.whiteText{
+    color: white;
+}
+
+.whiteBackground{
+    background-color: white;
+}
+
+.removeButt{
+    background-color: #F01616;
+    border-radius: 0 25px 25px 0;
+}
+
+.accountBox{
+    background-color: rgba(157, 69, 2, 0.67);
+    border-radius: 25px;
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+.mstr-swd{
+    height: 75px;
+    border-radius: 25px 0 0 25px;
+}
+
+.divider{
+    border-left: 2px #707070 solid;
+    height: 400px;
+    position: absolute;
+    left: 50.5%;
+    margin-left: -3px;
+    top: 0;
+}

@@ -1,0 +1,80 @@
+<app-header></app-header>
+
+<div class="container">
+    <div class="row">
+        <div class="col d-flex justify-content-center mt-5">
+            <h1 class="whiteText">Cart</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <div class="row whiteBackground roundCorners my-4">
+                <div class="col-1 px-0">
+                    <img src="../../../assets/MasterSwordImage.jpeg" alt="MasterSword" class="mstr-swd img-fluid">
+                </div>
+                <div class="col-3 d-flex align-items-center">
+                    <p class="mb-0">The Master Sword</p>
+                </div>
+                <div class="col-2 d-flex align-items-center justify-content-end pr-2">
+                    <p class="mb-0">1,000,000</p>
+                </div>
+                <div class="col-1 d-flex align-items-center pl-0">
+                    <img src="../../../assets/Rupee.png" alt="Rupee">
+                </div>
+                <div class="col-1 buttBorder d-flex justify-content-center align-items-center">
+                    <b class="mb-0">-</b>
+                </div>
+                <div class="col-2 buttBorder d-flex justify-content-center align-items-center">
+                    <b>1</b>
+                </div>
+                <div class="col-1 buttBorder d-flex justify-content-center align-items-center">
+                    <b>+</b>
+                </div>
+                <div class="col-1 removeButt py-4 d-flex justify-content-center align-items-center">
+                    <b class="whiteText smallFont mb-0">Remove</b>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Box -->
+        <div class="col"></div>
+        <div class="col-3 whiteBackground roundCorners pt-3">
+            <div >
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <p class="m-0">Items:</p>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end px-0 mb-1">
+                        <p class="mr-3 mb-0">1,000,000 <img src="../../../assets/Rupee.png" alt="Rupee"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <p class="m-0">Tax:</p>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end px-0">
+                        <p class="mr-3 mb-0">82,500 <img src="../../../assets/Rupee.png" alt="Rupee"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <hr class="totalDivider">
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col d-flex align-items-center">
+                        <p class="m-0">Total:</p>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end px-0 mb-1">
+                        <p class="mr-3 mb-0">1,082,500 <img src="../../../assets/Rupee.png" alt="Rupee"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div routerLink="/checkout" class="col payButt whiteText d-flex justify-content-center py-3">
+                        <b>Continue To Payment</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

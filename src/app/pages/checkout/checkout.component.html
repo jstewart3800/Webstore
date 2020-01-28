@@ -1,0 +1,87 @@
+<app-header></app-header>
+
+<div class="container accountBox py-4">
+    <div class="row">
+        <!-- Left side -->
+        <div class="col">
+            <form>
+                <!-- payment type -->
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1" class="whiteText">Payment Type:</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Hyrule Express</option>
+                        <option>MasterCard, but like, with a sword on it</option>
+                        <option>Visa</option>
+                    </select>
+                </div>
+                <!-- card number -->
+                <div class="form-group">
+                    <label for="cardNumberInput" class="whiteText">Card Number:</label>
+                    <input type="cardNumber" class="form-control" id="cardNumberInput" placeholder="1111111111111111">
+                </div>
+                <!-- Expiration Month -->
+                <div class="form-group">
+                    <label for="expirationMonthInput" class="whiteText">Expiration Month:</label>
+                    <input type="expirationMonth" class="form-control" id="expirationMonthInput" placeholder="11">
+                </div>
+                <!-- Expiration year -->
+                <div class="form-group">
+                    <label for="expirationYearInput" class="whiteText">Expiration Year:</label>
+                    <input type="expirationYear" class="form-control" id="expirationYearInput" placeholder="1998">
+                </div>
+                <!-- Security Code -->
+                <div class="form-group">
+                    <label for="securityCodeInput" class="whiteText">Security Code:</label>
+                    <input type="securityCode" class="form-control" id="securityCodeInput" placeholder="117">
+                </div>
+
+            </form>
+        </div>
+        <!-- Divider -->
+        <div class="col">
+            <div class="divider"></div>
+        </div>
+        <!-- Right Side -->
+        <div class="col">
+            <form>
+                <!-- First Name -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstNameInput" class="whiteText">First Name:</label>
+                        <input type="firstName" class="form-control" id="firstNameInput" placeholder="Link">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastNameInput" class="whiteText">Last Name:</label>
+                        <input type="lastName" class="form-control" id="lastNameInput" placeholder="Nice try">
+                    </div>
+                </div>
+                <!-- Street Address -->
+                <div class="form-group">
+                    <label for="streetAddressInput" class="whiteText">Street Address:</label>
+                    <input type="streetAddress" class="form-control" id="streetAddressInput" placeholder="1 Treehouse Way">
+                </div>
+                <!-- City -->
+                <div class="form-group">
+                    <label for="cityInput" class="whiteText">City:</label>
+                    <input type="city" class="form-control" id="cityInput" placeholder="Kokiri Forest">
+                </div>
+                <!-- State -->
+                <div class="form-group">
+                    <label for="stateInput" class="whiteText">State:</label>
+                    <input type="state" class="form-control" id="stateInput" placeholder="The Lost Woods">
+                </div>
+                <!-- Zip Code -->
+                <div class="form-group">
+                    <label for="zipCodeInput" class="whiteText">Zip Code:</label>
+                    <input type="zipCode" class="form-control" id="zipCodeInput" placeholder="12345">
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-primary btn-lg btn-block" routerLink="/order-complete">Place Order</button>
+        </div>
+    </div>
+</div>

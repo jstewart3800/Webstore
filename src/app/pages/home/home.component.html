@@ -1,0 +1,66 @@
+<app-header></app-header>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <ngb-carousel *ngIf="images">
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]="images[0]" alt="MasterSwordCarousel" class="roundCorners" routerLink="/weapons">
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>The Sword of Evil's Bane!</h3>
+                        <p>Freshly pulled from a rock in the woods!</p>
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]="images[1]" alt="HylianShieldCarousel" class="roundCorners" routerLink="/equipment">
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>The impenetrable Hylian Shield!</h3>
+                        <p>Forged in ancient times by a powerful dragon!</p>
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]="images[2]" alt="LensofTruthCarousel" class="roundCorners" routerLink="/tools">
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>The all-seeing Lens of Truth!</h3>
+                        <p>See all that is hidden with ease!</p>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+    <br>
+        <hr class="homeDivider">
+    <br>
+    <div class="row mb-4">
+        <div class="col" routerLink="/weapons">
+            <div class="card">
+                <img src="../../../assets/Weapons.jpg" class="card-img-top" alt="Weapons">
+                <div class="card-body d-flex justify-content-center">
+                  <p class="card-text">Weapons</p>
+                </div>
+              </div>
+        </div>
+        <div class="col" routerLink="/equipment">
+            <div class="card">
+                <img src="../../../assets/Equipment.jpg" class="card-img-top" alt="Equipment">
+                <div class="card-body d-flex justify-content-center">
+                  <p class="card-text">Equipment</p>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+            <div class="card" routerLink="/tools">
+                <img src="../../../assets/Tools.png" class="card-img-top" alt="Tools">
+                <div class="card-body d-flex justify-content-center">
+                  <p class="card-text">Tools</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
