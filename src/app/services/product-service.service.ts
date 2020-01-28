@@ -24,51 +24,115 @@ export class ProductServiceService {
     },
     {
       id: 3,
-      name: '',
+      name: 'Biggoron Sword',
       category: 'Weapon',
-      URL: '',
-      price: ,
-      img: ''
+      URL: 'BiggoronSword',
+      price: 7500,
+      img: 'BiggoronSword.jpg'
     },
     {
       id: 4,
-      name: '',
+      name: "Hero's Bow",
       category: 'Weapon',
-      URL: '',
-      price: ,
-      img: ''
+      URL: 'HerosBow',
+      price: 3000,
+      img: 'HeroBow.jpg'
     },
     {
       id: 5,
-      name: '',
+      name: 'Kokiri Sword',
       category: 'Weapon',
-      URL: '',
-      price: ,
-      img: ''
+      URL: 'KokiriSword',
+      price: 500,
+      img: 'KokiriSword.jpg'
     },
     {
       id: 6,
-      name: '',
+      name: 'Fire Arrows',
       category: 'Weapon',
-      URL: '',
-      price: ,
-      img: ''
+      URL: 'FireArrows',
+      price: 1500,
+      img: 'FireArrows.png'
     },
     {
       id: 7,
-      name: '',
+      name: 'Ice Arrows',
       category: 'Weapon',
-      URL: '',
-      price: ,
-      img: ''
+      URL: 'IceArrows',
+      price: 1500,
+      img: 'IceArrows.png'
     },
     {
       id: 8,
-      name: '',
+      name: 'Light Arrows',
       category: 'Weapon',
-      URL: '',
-      price: ,
-      img: ''
+      URL: 'LightArrows',
+      price: 8000,
+      img: 'LightArrows.png'
+    },
+    {
+      id: 9,
+      name: 'The Hylian Shield',
+      category: 'Equipment',
+      URL: 'TheHylianShield',
+      price: 800000,
+      img: 'HylianShieldImage.jpg'
+    },
+    {
+      id: 10,
+      name: 'Mirror Shield',
+      category: 'Equipment',
+      URL: 'MirrorShield',
+      price: 6000,
+      img: 'MirrorShield.png'
+    },
+    {
+      id: 11,
+      name: 'Goron Tuinic',
+      category: 'Equipment',
+      URL: 'GoronTunic',
+      price: 5000,
+      img: 'GoronTunic.jpg'
+    },
+    {
+      id: 12,
+      name: "Zora Tunic",
+      category: 'Equipment',
+      URL: 'ZoraTunic',
+      price: 5000,
+      img: 'ZoraTunic.jpeg'
+    },
+    {
+      id: 13,
+      name: 'Iron Boots',
+      category: 'Equipment',
+      URL: 'IronBoots',
+      price: 2000,
+      img: 'IronBoots.png'
+    },
+    {
+      id: 14,
+      name: 'Hover Boots',
+      category: 'Equipment',
+      URL: 'HoverBoots',
+      price: 3500,
+      img: 'HoverBoots.png'
+    },
+    {
+      id: 15,
+      name: 'Golden Gauntlets',
+      category: 'Equipment',
+      URL: 'GoldenGauntlets',
+      price: 15000,
+      img: 'GoldenGauntlets.png'
+    },
+    {
+      id: 16,
+      name: 'Deku Shield',
+      category: 'Equipment',
+      URL: 'DekuShield',
+      price: 500,
+      img: 'DekuShield.jpg'
     },
   ]; //don't leave as string
   constructor() { }
