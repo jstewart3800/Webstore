@@ -14,6 +14,7 @@ import { OrderCompleteComponent } from './pages/order-complete/order-complete.co
 
 
 const routes: Routes = [
+  {path: '', redirectTo: '/login', pathMatch: 'full'}, // Reroutes the base URL to login
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'account', component: AccountComponent },
@@ -24,8 +25,6 @@ const routes: Routes = [
   { path: 'tools', component: ToolsComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'order-complete', component: OrderCompleteComponent }
-
-
 ];
 
 @NgModule({
