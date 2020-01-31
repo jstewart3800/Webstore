@@ -1,10 +1,9 @@
 <div class="card">
-    <img src="/assets/{{item.img}}" class="card-img-top" alt="Hylian Shield">
+    <img src="/assets/{{item.img}}" class="card-img-top" alt="{{item.URL}}">
     <div class="card-body">
         <h5 class="card-title">{{item.name}}</h5>
         <p class="card-text">{{item.desc}}</p>
-        <br>
-        <p class="card-text">{{item.price}} <img src="../../../assets/Rupee.png" alt="Rupee"></p>
+        <p class="card-text d-flex justify-content-center align-items-center">{{item.price}}   <img class="ml-1" src="/assets/Rupee.png" alt="Rupee"></p>
         <div class="row">
             <div class="col">
                 <button routerLink="/cart" class="btn btn-primary">Add To Cart</button>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductServiceService } from 'src/app/services/product-service.service';
+import { ProductInterface } from 'src/app/interfaces/product-interface';
 
 @Component({
   selector: 'app-weapons',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./weapons.component.scss']
 })
 export class WeaponsComponent implements OnInit {
-
-  constructor() { }
+  weaponsList: ProductInterface[];
+  constructor(private pService: ProductServiceService) { }
 
   ngOnInit() {
+    this.weaponsList = this.pService.getWeapons();
   }
 
 }

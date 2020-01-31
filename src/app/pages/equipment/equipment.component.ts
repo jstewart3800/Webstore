@@ -8,11 +8,11 @@ import { ProductServiceService } from 'src/app/services/product-service.service'
   styleUrls: ['./equipment.component.scss']
 })
 export class EquipmentComponent implements OnInit {
-  productList: ProductInterface[]; //Change to equipmentList
+  equipmentList: ProductInterface[];
   constructor(private pService: ProductServiceService) { }
 
   ngOnInit() {
-    this.productList = this.pService.getProducts();
+    this.equipmentList = this.pService.getEquipment();
   }
 
 }

@@ -17,6 +17,14 @@ body{
     color: white;
 }
 
+.orangeText{
+    color: #842F02;
+}
+
+.redBack{
+    background-color: #520505 !important;
+}
+
 .whiteBackground{
     background-color: white;
 }
@@ -45,4 +53,9 @@ body{
     left: 50.5%;
     margin-left: -3px;
     top: 0;
+}
+
+.btn{
+    background-color: #842F02;
+    border-color: #842F02;
 }

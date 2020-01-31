@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductInterface } from 'src/app/interfaces/product-interface';
+import { ProductServiceService } from 'src/app/services/product-service.service';
 
 @Component({
   selector: 'app-tools',
@@ -6,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tools.component.scss']
 })
 export class ToolsComponent implements OnInit {
-
-  constructor() { }
+  toolsList: ProductInterface[];
+  constructor(private pService: ProductServiceService) { }
 
   ngOnInit() {
+    this.toolsList = this.pService.getTools();
   }
-
 }
