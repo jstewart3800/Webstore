@@ -223,5 +223,54 @@ export class ProductServiceService {
       img: 'Bottle.jpg' // <--------------------------------------- Don't forget img link
     }
   ];
+
+  // exampleProducts = {
+  //   equipment : [
+  //       {
+  //         id: 9,
+  //         name: 'The Hylian Shield',
+  //         category: 'Equipment',
+  //         desc: 'Forged in ancient times by a powerful thunder dragon, this shield is utterly impenetrable',
+  //         URL: 'TheHylianShield',
+  //         price: 800000,
+  //         img: 'HylianShieldImage.jpg'
+  //       },
+  //       {
+  //         id: 9,
+  //         name: 'The Hylian Shield',
+  //         category: 'Equipment',
+  //         desc: 'Forged in ancient times by a powerful thunder dragon, this shield is utterly impenetrable',
+  //         URL: 'TheHylianShield',
+  //         price: 800000,
+  //         img: 'HylianShieldImage.jpg'
+  //       }
+  //   ],
+  //   tools: [
+  //     {
+  //       id: 9,
+  //       name: 'The Hylian Shield',
+  //       category: 'Equipment',
+  //       desc: 'Forged in ancient times by a powerful thunder dragon, this shield is utterly impenetrable',
+  //       URL: 'TheHylianShield',
+  //       price: 800000,
+  //       img: 'HylianShieldImage.jpg'
+  //     },
+  //     {
+  //       id: 9,
+  //       name: 'The Hylian Shield',
+  //       category: 'Equipment',
+  //       desc: 'Forged in ancient times by a powerful thunder dragon, this shield is utterly impenetrable',
+  //       URL: 'TheHylianShield',
+  //       price: 800000,
+  //       img: 'HylianShieldImage.jpg'
+  //     },
+  //   ]
+  // }
   constructor() { }
+
+  getProducts(): ProductInterface[] {
+    return this.productList;
+    // return this.productList.Equipment
+  }
+
 }

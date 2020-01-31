@@ -14,6 +14,8 @@ import { EquipmentComponent } from './pages/equipment/equipment.component';
 import { ToolsComponent } from './pages/tools/tools.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { OrderCompleteComponent } from './pages/order-complete/order-complete.component';
+import { DisplayCardComponent } from './components/display-card/display-card.component';
+import { CartCardComponent } from './components/cart-card/cart-card.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { OrderCompleteComponent } from './pages/order-complete/order-complete.co
     EquipmentComponent,
     ToolsComponent,
     CheckoutComponent,
-    OrderCompleteComponent
+    OrderCompleteComponent,
+    DisplayCardComponent,
+    CartCardComponent
   ],
   imports: [
     BrowserModule,
