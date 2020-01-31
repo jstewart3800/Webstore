@@ -6,4 +6,5 @@ export interface ProductInterface {
     URL: string;
     price: number;
     img: string;
+    
 }
