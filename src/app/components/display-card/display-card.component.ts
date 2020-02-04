@@ -16,7 +16,6 @@ export class DisplayCardComponent implements OnInit {
   constructor(private pService: ProductServiceService, private cService: CartService) { }
 
   ngOnInit() {
-    // this.productList = this.pService.getProducts();
   }
 
   displayAddToCart(item) {

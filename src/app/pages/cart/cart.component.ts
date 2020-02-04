@@ -10,14 +10,30 @@ import { CartService } from 'src/app/services/cart.service';
 })
 export class CartComponent implements OnInit {
   cartList: ProductInterface[];
+  cartTotal = 0;
   constructor(private pService: ProductServiceService, private cService: CartService) { }
 
   ngOnInit() {
     this.cService.$cartItems.subscribe(items => {
       this.cartList = items;
     })
-
   }
 
+  itemPlus(item: ProductInterface) {
+    item.qty++;
+    this.cartTotal += item.price;
+  }
+
+  itemMinus(item, index) {
+    if (item.qty > 1) {
+      item.qty--;
+    } else {
+      this.removeItem(index);
+    }
+  }
+
+  removeItem(index) {
+    this.cartList.splice(index, 1);
+  }
   
 }

@@ -228,7 +228,7 @@ export class ProductServiceService {
         id: 22,
         name: 'Boomerang',
         category: 'Tools',
-        desc:"Though a child's weapon, this boomerang can stun enemies and retrieve fallen items. Useful against jellyfish.",
+        desc:"Though a child's weapon, this boomerang can stun enemies and retrieve fallen items.",
         URL: 'Boomerang',
         price: 2000,
         img: 'Boomerang.png',
