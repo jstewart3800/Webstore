@@ -6,7 +6,7 @@
         <p class="card-text d-flex justify-content-center align-items-center">{{item.price}}   <img class="ml-1" src="/assets/Rupee.png" alt="Rupee"></p>
         <div class="row">
             <div class="col">
-                <button routerLink="/cart" class="btn btn-primary">Add To Cart</button>
+                <button (click)="displayAddToCart(item)" routerLink="/cart" class="btn btn-primary">Add To Cart</button>
             </div>
             <div class="col">
                 <button routerLink="/wish-list" class="btn btn-primary">Add To Wish</button>

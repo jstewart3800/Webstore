@@ -9,12 +9,12 @@
     <div class="row">
 
         <div class="col-md-8">
-            <div class="row whiteBackground roundCorners my-4">
+            <div class="row whiteBackground roundCorners my-4" *ngFor='let item of cartList'>
                 <div class="col-4 d-flex align-items-center justify-content-center">
-                    <p class="mb-0">The Master Sword</p>
+                    <p class="mb-0">{{item.name}}</p>
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-end pr-2">
-                    <p class="mb-0">1,000,000</p>
+                    <p class="mb-0">{{item.price}}</p>
                 </div>
                 <div class="col-1 d-flex align-items-center pl-0">
                     <img src="/assets/Rupee.png" alt="Rupee">
@@ -23,10 +23,10 @@
                     <span class="badge badge-light buttBorder">-</span>
                 </div>
                 <div class="col-1 d-flex justify-content-center align-items-center p-0">
-                    <span class="badge badge-light buttBorder p-2">1</span>
+                    <span class="badge badge-light buttBorder p-2">{{item.qty}}</span>
                 </div>
                 <div class="col-1 d-flex align-items-center pl-0">
-                    <span class="badge badge-light buttBorder">+</span>
+                    <span class="badge badge-light buttBorder" (click)='itemPlus'>+</span>
                 </div>
                 <div class="col-1 removeButt py-4 d-flex justify-content-center align-items-center">
                     <b class="whiteText smallFont mb-0">Remove</b>
@@ -36,7 +36,7 @@
 
         <!-- Total Box -->
         <div class="col"></div>
-        <div class="col-3 whiteBackground roundCorners pt-3">
+        <div class="col-3 whiteBackground roundCorners totalBox pt-3">
             <div>
                 <div class="row">
                     <div class="col d-flex align-items-center">
@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div routerLink="/checkout" class="col payButt whiteText d-flex justify-content-center py-3">
+                    <div routerLink="/checkout" class="col payButt whiteText d-flex justify-content-center align-items-end py-3">
                         <b>Continue To Payment</b>
                     </div>
                 </div>
