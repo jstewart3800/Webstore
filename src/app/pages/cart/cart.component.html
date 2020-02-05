@@ -20,15 +20,15 @@
                     <img src="/assets/Rupee.png" alt="Rupee">
                 </div>
                 <div class="col-1 d-flex justify-content-end align-items-center pr-0">
-                    <span class="badge badge-light buttBorder" (click)='itemMinus(item, i)'>-</span>
+                    <span class="badge badge-light buttBorder" (click)='compItemMinus(item, i)'>-</span>
                 </div>
                 <div class="col-1 d-flex justify-content-center align-items-center p-0">
                     <span class="badge badge-light buttBorder p-2">{{item.qty}}</span>
                 </div>
                 <div class="col-1 d-flex align-items-center pl-0">
-                    <span class="badge badge-light buttBorder" (click)='itemPlus(item)'>+</span>
+                    <span class="badge badge-light buttBorder" (click)='compItemPlus(item)'>+</span>
                 </div>
-                <div class="col-1 removeButt py-4 d-flex justify-content-center align-items-center" (click)='removeItem(i)'>
+                <div class="col-1 removeButt py-4 d-flex justify-content-center align-items-center" (click)='compRemoveItem(item, i)'>
                     <b class="whiteText smallFont mb-0">Remove</b>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                         <p class="m-0">Items:</p>
                     </div>
                     <div class="col d-flex align-items-center justify-content-end px-0 mb-1">
-                        <p class="mr-3 mb-0">1,000,000 <img src="/assets/Rupee.png" alt="Rupee"></p>
+                        <p class="mr-3 mb-0">{{cartTotal}} <img src="/assets/Rupee.png" alt="Rupee"></p>
                     </div>
                 </div>
                 <div class="row">
@@ -51,7 +51,7 @@
                         <p class="m-0">Tax:</p>
                     </div>
                     <div class="col d-flex align-items-center justify-content-end px-0">
-                        <p class="mr-3 mb-0">82,500 <img src="/assets/Rupee.png" alt="Rupee"></p>
+                        <p class="mr-3 mb-0">{{cartTotal*.0825}} <img src="/assets/Rupee.png" alt="Rupee"></p>
                     </div>
                 </div>
                 <div class="row">
@@ -64,7 +64,7 @@
                         <p class="m-0">Total:</p>
                     </div>
                     <div class="col d-flex align-items-center justify-content-end px-0 mb-1">
-                        <p class="mr-3 mb-0">1,082,500 <img src="/assets/Rupee.png" alt="Rupee"></p>
+                        <p class="mr-3 mb-0">{{cartTotal+cartTotal*.0825}} <img src="/assets/Rupee.png" alt="Rupee"></p>
                     </div>
                 </div>
                 <div class="row">

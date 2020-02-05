@@ -16,24 +16,26 @@ export class CartComponent implements OnInit {
   ngOnInit() {
     this.cService.$cartItems.subscribe(items => {
       this.cartList = items;
-    })
+    });
+
+    this.cService.$cartTotal.subscribe(total => {
+      this.cartTotal = total;
+    });
+
   }
 
-  itemPlus(item: ProductInterface) {
-    item.qty++;
-    this.cartTotal += item.price;
+  compItemPlus(item: ProductInterface) {
+    this.cService.itemPlus(item);
   }
 
-  itemMinus(item, index) {
-    if (item.qty > 1) {
-      item.qty--;
-    } else {
-      this.removeItem(index);
-    }
+  compItemMinus(item, index) {
+    this.cService.itemMinus(item, index);
   }
 
-  removeItem(index) {
-    this.cartList.splice(index, 1);
+  compRemoveItem(item,index) {
+    this.cService.removeItem(item, index);
   }
+
+  
   
 }
