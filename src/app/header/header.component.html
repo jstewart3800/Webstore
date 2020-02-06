@@ -1,12 +1,14 @@
 <ul class="nav nav-tabs d-flex justify-content-around pt-3 headerNav">
-  <div ngbDropdown>
-    <button class="btn whiteText" id="dropdownBasic1" ngbDropdownToggle></button>
-    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-      <button ngbDropdownItem routerLink="/weapons" routerLinkActive="active">Weapons</button>
-      <button ngbDropdownItem routerLink="/equipment" routerLinkActive="active">Equipment</button>
-      <button ngbDropdownItem routerLink="/tools" routerLinkActive="active">Tools</button>
+  <li>
+    <div ngbDropdown>
+      <button class="btn whiteText" id="headerDropdown" aria-label="headerDropdown" ngbDropdownToggle></button>
+      <div ngbDropdownMenu aria-labelledby="headerDropdown">
+        <button ngbDropdownItem routerLink="/weapons" routerLinkActive="active">Weapons</button>
+        <button ngbDropdownItem routerLink="/equipment" routerLinkActive="active">Equipment</button>
+        <button ngbDropdownItem routerLink="/tools" routerLinkActive="active">Tools</button>
+      </div>
     </div>
-  </div>
+  </li>
   <li class="nav-item">
     <a class="nav-link orangeText" routerLink="/account" routerLinkActive="active">Account</a>
   </li>

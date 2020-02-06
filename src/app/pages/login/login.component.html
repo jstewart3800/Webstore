@@ -13,16 +13,18 @@
                         <form>
                             <div class="form-group ">
                                 <label for="exampleInputEmail1">Email Address:</label>
-                                <input type="email" class="form-control boxSolid" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
+                                <input #ea type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-label="Email">
                             </div>
                             <div class="form-group">
                                 <label for="passwordInput">Password:</label>
-                                <input type="password" class="form-control" id="passwordInput">
+                                <input #pw type="password" class="form-control" id="passwordInput"
+                                    aria-label="Password">
                             </div>
                             <div class="row">
                                 <div class="col d-flex justify-content-end">
-                                    <button routerLink="/home" type="submit" class="btn btn-primary">Log In</button>
+                                    <button (click)="logIn(ea.value, pw.value)" routerLink="/home" type="button"
+                                        class="btn btn-primary">Log In</button>
                                 </div>
                             </div>
                         </form>
@@ -34,7 +36,8 @@
     <div class="container">
         <div class="row">
             <div class="col d-flex justify-content-end">
-                <p class="whiteText">New to the bazaar? <button routerLink="/create-account" class="btn btn-primary">Create an Account!</button></p>
+                <p class="whiteText">New to the bazaar? <button routerLink="/create-account"
+                        class="btn btn-primary">Create an Account!</button></p>
             </div>
         </div>
     </div>
