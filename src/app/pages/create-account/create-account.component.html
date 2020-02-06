@@ -1,34 +1,38 @@
 <div class="container-fluid">
-    <div class="row py-5">
+    <div class="row pt-5">
         <div class="col d-flex justify-content-center my-5 loginHead">
             <h1>Create an Account</h1>
         </div>
     </div>
     <div class="row">
-        <div class="col py-5">
+        <div class="col pb-5">
             <div class="container loginBox">
                 <div class="row "> <!-- consider adding col-3s to ends for spacing -->
                     <div class="col">
                         <form>
                             <div class="form-group ">
-                                <label for="exampleInputEmail1">First Name:</label>
-                                <input type="name" class="form-control" id="exampleInputEmail1">
+                                <label for="firstNameInput">First Name:</label>
+                                <input #fn type="name" class="form-control" id="firstNameInput">
                             </div>
                             <div class="form-group ">
-                                <label for="exampleInputEmail1">Email Address:</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1">
+                                <label for="lastNameInput">Last Name:</label>
+                                <input #ln type="name" class="form-control" id="lastNameInput">
+                            </div>
+                            <div class="form-group ">
+                                <label for="emailInput">Email Address:</label>
+                                <input #ea type="email" class="form-control" id="emailInput">
                             </div>
                             <div class="form-group">
                                 <label for="passwordInput">Password:</label>
-                                <input type="password" class="form-control" id="passwordInput">
+                                <input #pw type="password" class="form-control" id="passwordInput">
                             </div>
                             <div class="form-group">
                                 <label for="passwordConfirm">Re-Enter Password:</label>
-                                <input type="password" class="form-control" id="passwordConfirm">
+                                <input #cpw type="password" class="form-control" id="passwordConfirm">
                             </div>
                             <div class="row">
                                 <div class="col d-flex justify-content-end">
-                                    <button routerLink="/login" type="submit" class="btn btn-primary">Create Account</button>
+                                    <button routerLink="/login" type="submit" class="btn btn-primary" (click)="createAccount(fn.value,ln.value,ea.value,pw.value,cpw.value)">Create Account</button>
                                 </div>
                             </div>
                         </form>
