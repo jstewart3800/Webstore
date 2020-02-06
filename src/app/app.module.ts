@@ -16,6 +16,7 @@ import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { OrderCompleteComponent } from './pages/order-complete/order-complete.component';
 import { DisplayCardComponent } from './components/display-card/display-card.component';
 import { CartCardComponent } from './components/cart-card/cart-card.component';
+import { CreateAccountComponent } from './pages/create-account/create-account.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { CartCardComponent } from './components/cart-card/cart-card.component';
     CheckoutComponent,
     OrderCompleteComponent,
     DisplayCardComponent,
-    CartCardComponent
+    CartCardComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,

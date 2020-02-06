@@ -11,6 +11,7 @@ import { EquipmentComponent } from './pages/equipment/equipment.component';
 import { ToolsComponent } from './pages/tools/tools.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { OrderCompleteComponent } from './pages/order-complete/order-complete.component';
+import { CreateAccountComponent } from './pages/create-account/create-account.component';
 
 
 const routes: Routes = [
@@ -24,7 +25,9 @@ const routes: Routes = [
   { path: 'equipment', component: EquipmentComponent },
   { path: 'tools', component: ToolsComponent },
   { path: 'checkout', component: CheckoutComponent },
-  { path: 'order-complete', component: OrderCompleteComponent }
+  { path: 'order-complete', component: OrderCompleteComponent },
+  { path: 'create-account', component: CreateAccountComponent },
+
 ];
 
 @NgModule({
@@ -43,4 +46,5 @@ export const routingComponents = [  //add newly routed compnents here
   EquipmentComponent,
   ToolsComponent,
   CheckoutComponent,
-  OrderCompleteComponent];
+  OrderCompleteComponent,
+  CreateAccountComponent];

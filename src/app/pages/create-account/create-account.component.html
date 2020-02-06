@@ -1,14 +1,13 @@
 <div class="container-fluid">
     <div class="row py-5">
         <div class="col d-flex justify-content-center my-5 loginHead">
-            <h1>Welcome to the Castle Town Bazaar!</h1>
+            <h1>Create an Account</h1>
         </div>
     </div>
     <div class="row">
-        <div class="col pt-5 pb-1">
+        <div class="col py-5">
             <div class="container loginBox">
-                <div class="row ">
-                    <!-- consider adding col-3s to ends for spacing -->
+                <div class="row "> <!-- consider adding col-3s to ends for spacing -->
                     <div class="col">
                         <form>
                             <div class="form-group ">
@@ -20,9 +19,13 @@
                                 <label for="passwordInput">Password:</label>
                                 <input type="password" class="form-control" id="passwordInput">
                             </div>
+                            <div class="form-group">
+                                <label for="passwordInput">Re-Enter Password:</label>
+                                <input type="password" class="form-control" id="passwordConfirm">
+                            </div>
                             <div class="row">
                                 <div class="col d-flex justify-content-end">
-                                    <button routerLink="/home" type="submit" class="btn btn-primary">Log In</button>
+                                    <button routerLink="/login" type="submit" class="btn btn-primary">Create Account</button>
                                 </div>
                             </div>
                         </form>
@@ -31,11 +34,5 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col d-flex justify-content-end">
-                <p class="whiteText">New to the bazaar? <button routerLink="/create-account" class="btn btn-primary">Create an Account!</button></p>
-            </div>
-        </div>
-    </div>
 </div>
+

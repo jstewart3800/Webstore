@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ProductServiceService } from 'src/app/services/product-service.service';
 import { ProductInterface } from 'src/app/interfaces/product-interface';
 import { CartService } from 'src/app/services/cart.service';
+import { WishListService } from 'src/app/services/wish-list.service';
 
 @Component({
   selector: 'app-display-card',
@@ -13,13 +14,17 @@ export class DisplayCardComponent implements OnInit {
 
   @Input() item: object;
 
-  constructor(private pService: ProductServiceService, private cService: CartService) { }
+  constructor(private pService: ProductServiceService, private cService: CartService, private wService: WishListService) { }
 
   ngOnInit() {
   }
 
   displayAddToCart(item) {
     this.cService.addToCart(item);
+  }
+
+  displayAddToWish(item) {
+    this.wService.addToWish(item);
   }
 
 }
