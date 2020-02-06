@@ -13,7 +13,13 @@ export class UserService {
   constructor() { }
 
   checkUserInfo(email: string, password: string): boolean {
-    return email === this.userArray[0].email ? (password === this.userArray[0].password ? true : false) : false;
+    let potentialUser = this.userArray.find(x => email === x.email);
+    if(potentialUser === undefined) {
+      return false;
+    } else {
+      return email === potentialUser.email ? (password === potentialUser.password ? true : false) : false;
+    }
+
   }
 
   checkIfUserExists(email: string): boolean {
