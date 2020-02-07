@@ -32,7 +32,9 @@ export class UserService {
   }
 
   getLocalUsers() {
-    this.userArray = JSON.parse(localStorage.getItem('localUsers'));
-    
+    if(JSON.parse(localStorage.getItem('localUsers'))){
+      this.userArray = JSON.parse(localStorage.getItem('localUsers'));
+    }
+
   }
 }

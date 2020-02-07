@@ -11,10 +11,11 @@ import { debug } from 'util';
 export class LoginComponent implements OnInit {
 
   constructor(private uService: UserService) { 
-    uService.getLocalUsers();
+    
   }
 
   ngOnInit() {
+    this.uService.getLocalUsers();
   }
 
   logIn(email, password) {

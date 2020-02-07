@@ -10,7 +10,7 @@ import { User } from 'src/app/interfaces/user';
 export class CreateAccountComponent implements OnInit {
 
   constructor(private uService: UserService) { 
-    uService.getLocalUsers();
+    
   }
 
   ngOnInit() {
