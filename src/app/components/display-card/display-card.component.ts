@@ -12,7 +12,7 @@ import { WishListService } from 'src/app/services/wish-list.service';
 export class DisplayCardComponent implements OnInit {
   productList: ProductInterface[];
 
-  @Input() item: object;
+  @Input() item: ProductInterface;
 
   constructor(private pService: ProductServiceService, private cService: CartService, private wService: WishListService) { }
 
