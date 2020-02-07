@@ -10,7 +10,9 @@ import { debug } from 'util';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private uService: UserService) { }
+  constructor(private uService: UserService) { 
+    uService.getLocalUsers();
+  }
 
   ngOnInit() {
   }

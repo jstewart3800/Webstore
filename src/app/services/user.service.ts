@@ -5,11 +5,7 @@ import { User } from '../interfaces/user';
   providedIn: 'root'
 })
 export class UserService {
-  userArray: User[] = [
-    {
-      firstName: 'Sample', lastName: 'Sampleton', email: 'sampleemail@sample.sample', password: 'sample'
-    }
-  ]
+  userArray: User[] = [];
   constructor() { }
 
   checkUserInfo(email: string, password: string): boolean {
@@ -32,5 +28,11 @@ export class UserService {
 
   addUser(userToBeAdded: User) {
     this.userArray.push(userToBeAdded);
+    localStorage.setItem('localUsers', JSON.stringify(this.userArray));
+  }
+
+  getLocalUsers() {
+    this.userArray = JSON.parse(localStorage.getItem('localUsers'));
+    
   }
 }
