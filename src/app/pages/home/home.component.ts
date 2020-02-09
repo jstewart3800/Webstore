@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class HomeComponent implements OnInit {
-  images = ['/assets/MasterSwordCarousel.jpg', '/assets/HylianShieldCarousel.jpg', '/assets/LensofTruthCarousel.jpeg']
+  images = ['assets/MasterSwordCarousel.jpg', 'assets/HylianShieldCarousel.jpg', 'assets/LensofTruthCarousel.jpeg']
 
   constructor() { }
 
